@@ -1,0 +1,36 @@
+/* With the # => We are Targeting Id .
+With the . => We are targeting the class.*/
+/* Inside Div we have a  */
+
+/* Here We did some basic coloring of Div, Span And text and Align it to the center */
+
+.Body{
+    background-color: black;
+}
+
+.Body .Content{
+    align-content: center;
+    color: white;
+}
+
+
+.Body .Content #Head{
+    text-align: center;
+    
+}
+
+.Body .Content #Head #Text1{
+    background-color: chartreuse;
+    color:black;
+    
+}
+
+.Body .Content #Paragraph{
+    text-align: center;
+
+}
+
+.Body .Content #Paragraph #Para1{
+    background-color: chartreuse;
+    color:black;
+}
