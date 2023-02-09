@@ -1,0 +1,52 @@
+
+/* This *{} is a usiversal when we use this then it will make changes to all in the webpage */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Symbol{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: black;
+    color: aliceblue;
+}
+.Symbol #paraA{
+    background-color: red;
+    margin-left: 727px;
+    margin-right: 883px;
+}
+.Symbol #paraB{
+    background-color: black;
+    text-align: center;
+}
+.Symbol #paraC{
+    background-color: red;
+    text-align: right;
+    margin-right:754px;
+    margin-left:882px;
+}
+
+.Symbol #paraA #Top{
+    margin-left:1px ;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: Black;
+}
+
+
+.Symbol #paraB #Mid{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: red;
+    
+}
+.Symbol #paraC #Bottom{
+    margin-right:1px ;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: Black;
+}
