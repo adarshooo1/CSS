@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarginCollapse</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .Box1{
+            text-align: center;
+            background-color: red;
+            margin: 30px;
+            padding: 5px;
+            border: 3px solid black;
+            height: 400px;
+        }
+        .Box2{
+            text-align: center;
+            background-color: rgb(252, 248, 3);
+            margin: 30px;
+            padding: 5px;
+            border: 3px solid black;
+            height: 400px;
+        }
+        /* Here Marging is collapsing because as be have same margin in Box1 and Box2 , so it becomes only 30, If in case one have greater then the other margin then greater will be the part of both not the lesser one. */
+        .Box2 #Sub1Box2{
+            text-align: center;
+            background-color: red;
+            padding: 5px;
+            border: 3px solid black;
+            height: 100px;
+            width: 100%;
+            box-sizing: border-box;
+            /* Box-sizing: Border-box will help the content inside the div should be inside the div, and prevent the content to overflow  */
+            /* Here in Box-Sizing: Padding and Border will be countend not the Margin*/
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Box1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla dignissimos optio assumenda facilis nihil aspernatur tenetur possimus sed nostrum quo voluptatibus non libero consequuntur provident, et magnam qui perspiciatis ipsa iste quae. Beatae odio est, amet quo enim sapiente iste consequatur deleniti veniam laborum ipsam error, atque minus dolore nam a eaque reiciendis? Aliquam fugit debitis vitae odit optio. Modi placeat explicabo, hic cum, quos dolor, animi rerum dignissimos accusamus eum dolores repellendus maiores? Quisquam vero nam exercitationem porro architecto excepturi, adipisci cupiditate totam commodi saepe odio quasi sed aspernatur, delectus quo veritatis. Possimus a consectetur omnis cumque, rem iure.
+    </div>
+    <div class="Box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat assumenda cupiditate eius fugiat vero. Sapiente asperiores quisquam cumque cum eos ut deleniti enim obcaecati consequuntur sed, alias porro illo voluptatum mollitia, praesentium corrupti. Rerum itaque deserunt nemo veritatis quae ex facere, possimus, voluptatum nam voluptates sapiente repellendus totam nobis quod.
+        
+        <div id="Sub1Box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis necessitatibus fuga repellendus nobis? Et dolorum provident dolorem magnam autem, reprehenderit ad perferendis sequi, voluptates incidunt quae eaque omnis molestiae.
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /*Part 1=>  Margin: Top , Right , Bottom , Left; In a clock wise manner When we know that how much margin we need in each side then we set like this , same case in Padding 
+    Part 2 => Margin: Top & Bottom , Left & Right 
+    Else We can also set like this :-
+    margin-top: 10px;
+    margin-right: 1px;
+    margin-bottom: 11px;
+    margin-left: 3px;
+    same for the padding
+
+    */
+
+}
+.Content{
+    /* What Ever the content will we in these height and width only not on the complete webpage , means according to the webpage. */
+    height: 423px;
+    width: 345px;
+    background-color: red;
+    margin: 4px 10px 4px 10px;
+    padding: 10px; /*Padding is the inner part of the box , Like if we want that the text should be have some space inside the div*/
+    border: 5px solid black;
+    border-style: dotted; /*With this we can style the border*/
+    border-radius: 15px; /*It willof soften the corner as more as we increase. */
+}
