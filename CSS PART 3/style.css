@@ -1,0 +1,52 @@
+.Item{
+    background-image: url(DodgeRed.jpg);
+    border: 5px solid red;
+    background-size:cover; /*This will help the image to cover all over the screen.*/
+    background-attachment: fixed; /*This will help the image to get stay at the single place in the screens*/
+    /* background-attachment: local; */ /*This is image move slightly according to the content over then image is moving*/ 
+    /* background-attachment: scroll; */ /*This will help the image to scroll*/ 
+    background-position:center; /*This will keep stay the image fixed on its place while we change the screensize then center will keep the image in center , we have some attribute like:- Top, Botton , left , right and many more but these are the basics.*/
+
+    background-repeat: no-repeat; /*If the background image is repeating in x & y axis then it will prevent to repeat and one image will be there. As, well as we can also stop repeating x and y one by one*/
+
+    margin: 0px;
+    padding: 0px
+}
+
+.CSS{
+    /* background-color: black;*/ /* This will cover the bacground and show some other color which is not the part of the image*/   
+    color: white;
+}
+
+.Header{
+    text-align: center;
+}
+
+.CSS .Header #Text #subHeader #subText{
+    margin: 0px;
+}
+
+div#subHeader{
+    background-color: red;
+    text-align: center;
+    margin: 20px;
+}
+
+div.Para{
+    margin: 20px;
+    background-color:red;
+    color:white;
+    padding: 10px;
+}
+
+.Para #stylingA{
+    color:red;
+}
+
+.Para #ParaA{
+    margin: 0px;
+    background-color: white;
+    color:red;
+    padding: 10px;
+}
+

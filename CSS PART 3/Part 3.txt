@@ -1,0 +1,22 @@
+Here we learnt about the background image setting , padding , marging,
+border , image attachment ,image size, and image positions
+
+The margin property is used to add space outside of an element, around
+the element. This space is transparent and can be used to separate elements
+from each other. By setting a margin, you can control the amount of space
+between an element and the elements around it.
+
+The padding property, on the other hand, is used to add space inside of an element,
+around the element's content. This space is filled with the background color of the
+element, and can be used to separate the element's content from its border. By setting
+padding, you can control the amount of space between the element's content and its border.
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+background-size: This property sets the size of the background image. The value can be set in length units (such as pixels), percentages, or keywords (such as "cover" or "contain"). If set to "cover", the background image will be scaled to cover the entire background area, while if set to "contain", the image will be scaled to fit inside the background area while maintaining its aspect ratio.
+
+background-attachment: This property sets whether a background image should scroll with the rest of the content or remain fixed in place. The values can be "scroll" (the default) or "fixed". If set to "fixed", the background image will remain fixed in place, even if the page is scrolled.
+
+background-position: This property sets the starting position of a background image. The values can be specified in length units (such as pixels), percentages, or keywords (such as "center"). The default value is "0% 0%", which means that the image will be positioned in the top left corner of the background area.
+
+background-repeat: This property sets whether a background image should be repeated, and in which directions. The values can be "repeat" (both horizontally and vertically), "repeat-x" (horizontally), "repeat-y" (vertically), or "no-repeat". If set to "no-repeat", the background image will only be displayed once, in the position specified by background-position.
