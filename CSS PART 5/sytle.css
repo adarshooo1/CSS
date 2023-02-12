@@ -1,0 +1,22 @@
+.box1{
+    background-color: red;
+    height: 100px;
+    width: 423px;
+    display:inline-block;
+    padding: 1px;
+    /* display: none; Will remove the item from the display and other element will take the space of the item */
+    /* display: hidded; Will just hide the item but space will be there. */
+    
+}
+
+.box2{
+    background-color:blue;
+    width: 423px;
+    display: inline;
+}
+
+/* Note :
+1.When we use Display-inline then it disobey all the property of the height and width and cover that space which is required up to cover the item inside it.
+2.When we give margin then only left and right values will be set in the inline display not the top and bottom margin, and padding
+3.Display : inline-block will allow other to share the space not like display: Block which will cover all the horizontal space.
+*/
