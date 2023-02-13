@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExerciseSet</title>
+    <!-- font style links -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Thasadith&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header{
+            padding-top: 10px;
+            margin: 2px;
+            border: 5px solid cadetblue;
+            height: 50px;
+            background-color: black;
+            color: antiquewhite;
+            font-weight:bold;
+            font-size:x-large;
+            display: flex;
+        }
+        .subTopLeft{
+            background-color: black;
+            color: antiquewhite;
+            letter-spacing: 2px;
+            padding-left: 30px;
+            
+            font-family: 'Monoton', cursive;
+            width: 50%;
+            display: inline-block;
+        }
+        .SubTopRight{
+            text-align: right;
+            background-color: black;
+            color: antiquewhite;
+            width: 50%;
+            display: inline-block;
+            font-family: 'Monoton', cursive;
+        }
+
+        .topHead .SubTopRight ul li{
+            display: inline-block;
+            margin-right: 30px;
+        }
+        .topHead .SubTopRight{
+            text-align: right;
+        }
+
+        .subbodyleft{
+            height: 60vh;
+            background-color:#9999;
+            color:black;
+            display: inline-block;
+            width: 50%;
+            height: 50vh;
+            border: 2px solid black;
+            text-align: center;
+            font-size: large;
+            font-family: 'Thasadith', sans-serif;
+            
+           
+
+        }
+        .subbodyright{
+            height: 60vh;
+            background-color:#9999;
+            color:black;
+            display: inline-block;
+            /* display: Inline-block will keep the item in the same line and take only that space which is required that's why we use inline-block not the block because block will take all the space which will not let the other div element in the same line*/
+            width: 49.3%;
+            height: 50vh;
+            border: 2px solid black;
+            text-align: center;
+            font-size: large;
+            margin-left: 5px;
+            font-family: 'Thasadith', sans-serif;
+            /* display: none; :- When we use display none then the content is completely not there all the spaces and item removed from the webpage and other element will take place*/
+            /* visibility: hidden; :- This will hide the object not remove the objects and not let anyone give his space */
+
+        }
+        footer{
+            height: 19px;
+            background-color: cadetblue;
+            text-align: center;
+            border: 1px solid black;
+            font-family: 'Londrina Shadow', cursive;
+            font-display:black;
+            /* Here Text transformation uneven to uppercase */
+            text-transform:uppercase;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="topHead">
+       <div class="subTopLeft">Let's Code In!</div>
+       <div class="SubTopRight">
+        <ul class="Hamburger">
+            <li class="Home">Home</li>
+            <li class="About">About</li>
+            <li class="Help">Help</li>
+        </ul>
+       </div>
+
+    </header>
+
+    <div class="subbodyleft">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam minus corporis nobis ab, cum corrupti ex provident ut doloribus vitae facilis ratione quisquam illum temporibus soluta? Repellat cumque asperiores sequi!.</p>
+    </div><div class="subbodyright">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque sint sed esse doloremque porro ex vitae optio debitis nostrum doloribus architecto consectetur dolorum deleniti nihil excepturi ratione ea, quos quas.</p>
+    </div>
+
+    <footer>copyright &#169 Let's Code In!</footer>
+
+</body>
+</html>
