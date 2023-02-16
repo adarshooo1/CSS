@@ -1,0 +1,25 @@
+There are more units for discribing size other than "px". There are rem, cm, vm, vh, percentage etc.
+
+///////////////////////////////////////////////////////////////////
+Whats wrong with pixels
+
+pixels (px) are relative to the viewing device , for a device with 
+size (1020 X 1080) , 1 px is i unit out of 1080/1920.
+
+/////////////////////////////////////////////////////////////////
+Relative Length
+
+There units re relative to the other length property.
+Following are some of the most commonly used relative lengths.
+
+1.em --> Unit relative to the parent font size. em means "My parent element's font size"
+
+2.rem --> Unit relative to the voot font size (<HTML> tag)
+
+3.vw --> Unit relative to 1% viewport width.
+
+4.vh --> Unit reative to 1% viewport height.
+
+5.% --> Unit relative to the parent element.
+
+////////////////////////////////////////////////////////////////////

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 6</title>
+
+    <style>
+        html{
+            font-size: 10px;
+            /* Like this we can change the font size of the html page. */
+        }
+
+        .container{
+            font-size: 34px;
+        }
+
+        .box{
+            font-size: 20px;
+        }
+
+        .boxinsideacontainer{
+            font-size: 3em;
+            /*This will relatively increase the size of the text inside the body. Like Its parent font size will be multiplied with the current member of the div, Example-> .box font size is 20px and .boxinsideacontainer font size is 3em then (20 * 3 = 60px) then the current size will be grows to 60px*/
+        }
+
+        .container2{
+            font-size: 3rem;
+            /*This is also same as em but the difference is em relatively increase the size of the font where as rem increase the size relative to the html page font size, Like here the relative html font size is 16px and we use 3 rem then (16px * 3rem = 48px in the html font size.)*/
+        }
+
+        
+
+        .container3{
+            background-color: rgb(209, 97, 209);
+            height: 60vh; /*We can also use min-hight and max-hight in the webpage according to the content we want to display.*/
+            min-height:20vh;
+            max-height:60vh;
+            width:33%;
+            width: 33vw;
+            max-width: 50vw; /*A parameter that we have to follow before increasing the size of the container.*/
+            min-width: 20vw; /*Parameter of min-height*/
+            display: inline-block;
+            border: 1px solid black;
+            font-size: 2em;
+        }
+        .container4{
+            background-color: rgb(32, 178, 166);
+            height: 60vh; /*We can also use min-hight and max-hight in the webpage according to the content we want to display.*/
+            min-height:20vh;
+            max-height:60vh;
+            width:33%;
+            width: 32vw;
+            max-width: 50vw; /*A parameter that we have to follow before increasing the size of the container.*/
+            min-width: 20vw; /*Parameter of min-height*/
+            display: inline-block;
+            border: 1px solid black;
+            font-size: 2em;
+            
+        }
+        .container5{
+            background-color: rgb(248, 238, 48);
+            height: 60vh; /*We can also use min-hight and max-hight in the webpage according to the content we want to display.*/
+            min-height:20vh;
+            max-height:60vh;
+            width:33%;
+            width: 33vw;
+            max-width: 50vw; /*A parameter that we have to follow before increasing the size of the container.*/
+            min-width: 20vw; /*Parameter of min-height*/
+            display: inline-block;
+            border: 1px solid black;
+            font-size: 2em;
+        }
+
+        .flex{
+            background-color: red;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <p>This is a container</p>
+        <div class="box">
+            <p>This is a box</p>
+            <div class="boxinsideacontainer">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus corporis dolore, id ipsum at nemo accusantium tempora ad nisi dolor.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, alias quas, asperiores atque quam cum officiis repudiandae odio ratione perspiciatis omnis assumenda ducimus soluta totam reiciendis fugiat commodi, aut at.
+        </p>
+    </div>
+
+    <div class="flex">
+        <div class="container3">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptatem.</p>
+        </div><div class="container4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, consequuntur?</p>
+        </div><div class="container5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit?</p>
+        </div>
+    </div>
+    
+</body>
+</html>

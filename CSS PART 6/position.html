@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 6</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        header{
+            background-color: black;
+            color: aqua;
+            height: 70px;
+            width: 100vw;
+            position: sticky; /*This will work upon z-index whose z-index number is bigger then the position of that element will be at the top of the webpage while scrolling*/
+            z-index: 1;
+        }
+        li{
+            display: inline-block;
+        }
+        .container{
+            background-color: chartreuse;
+            height: 444vh;
+            width: 80vw;
+            border-radius: 5px;
+            border: 2px solid purple;
+            margin: auto; /*Margin auto will align the container in the center*/
+            
+            
+
+        }
+        .para{
+            text-align: center;
+            background-color: black;
+            color: azure;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 2px solid red;
+            width: 45vw;
+            margin: auto;
+            position: relative;
+            top: 18px;
+        }
+        .right{
+            background-color: black;
+            color: aliceblue;
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            border: 2px solid sienna;
+            border-radius: 5px;
+            position: absolute;/*This will work according to its first non-static ancestor*/
+            left: 0;
+        }
+        .left{
+            background-color: black;
+            color: aliceblue;
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            border: 2px solid sienna;
+            border-radius: 5px;
+            position: absolute;/*This will work according to its first closest non-static ancestor*/ 
+            right: 0;
+        }
+        .mid{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            width: 200px;
+            height: 100px;
+            margin-top: 20px;
+            border: 2px solid sienna;
+            border-radius: 5px;
+            position: relative;/*This will work according to its closest first non-static ancestor*/ 
+            left: 419px;
+            top: 68px;
+        
+        }
+
+        .chat{
+            background-color: rgb(96, 40, 180);
+            color: rgb(255, 255, 255);
+            height: 40px;
+            width: 100px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            border: 3px solid black;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 18px;
+        }    
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+    </header>
+        <div class="container">
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quibusdam!</p>
+
+
+            <div class="right">Lorem ipsum dolor sit amet.</div>
+            <div class="left">Adarsh is not a human being.</div>
+            <div class="mid">Lorem ipsum dolor sit.</div>
+            <div class="chat">Chat with us</div>
+        </div>
+</body>
+</html>
