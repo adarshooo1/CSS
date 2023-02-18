@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 7</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 200vh;
+            background-color:crimson;
+            display: flex;
+            flex-direction:row;
+            /* Parent flex properties */
+            /* Properties for flex display:flex wrap, justify-content, align-items, align-content;  */
+            flex-wrap:wrap;
+            justify-content: flex-start;/*For Horizonally Center*/
+            align-content:center; /*For Vertically Center without spacing and for spacing align-item:center;*/
+        }
+        .box1{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 12px;
+            text-align: center;
+            border: 1px solid white;
+            height: 200px;
+            width: 200px;
+            font-size: 3vw;
+        
+            align-self: flex-end; /*if the align-content in the parent is used then this property will not work */
+
+            /* Child flex properties : Order , align-self , flow grow , flex shrink*/
+        }
+        .box2{
+            background-color: dimgray;
+            color: chartreuse;
+            padding: 12px;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            font-size: 3vw;
+        }
+        .box3{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 12px;
+            text-align: center;
+            border: 1px solid white;
+            height: 200px;
+            width: 200px;
+            font-size: 3vw;
+
+        }
+        .box4{
+            background-color: dimgray;
+            color: chartreuse;
+            padding: 12px;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            font-size: 3vw;
+            
+        }
+        .box5{
+            background-color: black;
+            color: rgb(255, 255, 255);
+            /* padding: 12px; */
+            text-align: center;
+            border: 1px solid white;
+            /*Items having higher order value placed in the end of the container and by defalut the order value is 0.*/
+            order: 4;
+            height:50px;
+            /* In Case if we want to grow the item as we minimize */
+            flex-grow: 3;
+            /* In case of the item inside a flex box is overflowng then we use flex-shrink */
+            /* flex-shrink: 2; */
+            
+        }
+
+    </style>
+</head>
+    <div class="container">
+        <div class="box1">Hello this is Box 1</div>
+        <div class="box2">Hello this is Box 2</div>
+        <div class="box3">Hello this is Box 3</div>
+        <div class="box4">Hello this is Box 4</div>
+
+        <div class="box5">Grow more</div>
+    </div>
+</body>
+</html>
