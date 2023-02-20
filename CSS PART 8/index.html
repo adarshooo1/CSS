@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 8</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            background-color: darkblue;
+            padding: 10px;
+            
+            height: 40vh;
+
+            grid-row-gap:9px;
+            
+            /* As many time we use auto, thhis will divide column at that many part. As well as we can give partiulare value like : 21px , 100px*/
+            grid-template-columns: auto auto auto auto; /*This will also help in make dynamic webpage and responsive as well as y passing value we can set width of the css grid columns*/
+            grid-column-gap:2px ;
+
+            /* grid-template-rows: will help to set height of the in grid item */
+            grid-template-rows:auto;
+
+            grid-template-columns: auto auto auto;
+
+
+            /* Note:- If we use grid-gap: 5px; Then row gap and column gap will we set as 5px */
+        }
+        .item{
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--grid-row: 1 /span 2 will occupy the spage till row 2 and grid-column: 1 /span 3 will occupy the space of 3 rows  -->
+        <div class="item" style="grid-column: 1 / span 2; grid-row: 1 / span 3;">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>

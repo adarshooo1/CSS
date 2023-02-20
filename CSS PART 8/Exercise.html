@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            padding:0 10px;
+            width:100%;
+            background-color: #000;
+            color: #fff;
+            border: 2px solid white;
+        }
+        ul{
+            display:inline-grid;
+            padding:20px 0;
+            grid-template-columns: auto auto;
+        }
+        li{
+            list-style: none;
+            margin: 0 20px;
+            font-weight:bolder ;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: 2px solid rgb(247, 4, 4);
+        }
+        .container{
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            height: 60vh;
+            width: 100vw;
+            padding:10px;
+            text-align: center;
+            display: grid;
+            grid-template-rows: auto auto;
+        }
+        .containerSub{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content:space-evenly; 
+        }
+
+        .box1{
+            background-color: green;
+            width: 20vw;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2{
+            background-color:red;  
+            width: 20vw;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box3{
+            background-color:green;  
+            width: 20vw;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Help</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea et consequatur architecto quisquam quo nam recusandae voluptas eos, cumque explicabo neque debitis quia voluptate alias nihil accusamus laborum totam tenetur dolorem. Iure ducimus vero voluptate iusto fugit? Quibusdam, commodi voluptatibus odit porro consequatur voluptas repellat culpa, quis veniam officiis eius.
+
+        <div class="containerSub">
+            <div class="box1">Mango</div>
+            <div class="box2">Tango</div>
+            <div class="box3">Rango</div>
+        </div>
+
+    </div>
+</body>
+</html>
