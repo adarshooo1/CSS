@@ -1,0 +1,47 @@
+<!-- Transform , Transitions and Animations -->
+
+<!-- Here we learn about the transform property which we are using but less other then flex, grid. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 9 Transform</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: darkgray;
+            height: 450px;
+        }
+        .box{
+            border: 2px solid black;
+
+            /* transform: translate(100px , 200px ) will make the item inside the container out of the Container and make is scrollable horizontally first then vertically.*/
+            transform: translate(100px , 100px);
+            /* transform: rotate(o.1turn to 1turn as well as we can rotate the text in degrees as well(45deg)) */
+            transform: rotate(0.1turn);
+            /* transform:scaleX(3) it will help in to give the (text or image) 3D effect. We have scaleX,ScaleY for scale this horizonatlly else in vertically, ve cannot use this together.Have to use it sepertely*/
+            transform:scaleX(3);  
+            /* transform:swek(0.1deg , 0.5deg), It will help in to make text moved as well as image. Mainly for the Image. */
+            transform: skew(0.1deg , 0.5deg);
+
+            /* transform: matrix(scaleX(3), skewY(11deg), skewX(110deg), scaleY(0), translateX(100px), translateY(300px)); We can set all the parameter all together with this properties */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <P class="para">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci ullam exercitationem soluta culpa hic id quis. Dolores cupiditate voluptatibus voluptatem dolor, similique commodi rem iste doloribus non voluptas! Nulla aliquid, esse soluta, iure vitae architecto distinctio autem quam ullam suscipit sint possimus repellendus? At ex iste consequuntur illum! Quasi, cupiditate? Modi veniam labore vel aspernatur asperiores harum recusandae error fugiat sapiente ut repellat soluta cupiditate porro esse, iste quae quidem repudiandae nulla ipsum at quos nostrum dicta? A tempora laudantium praesentium hic odio commodi nostrum, ipsum necessitatibus iusto ex eaque doloremque fugiat dignissimos cum beatae fugit alias quod dolores sequi.
+            </P>
+        </div>
+    </div>
+</body>
+</html>

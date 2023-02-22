@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS PART 9 TRANSITIONS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+    }
+
+    img{
+        height: 100px;
+        border-radius: 15px;
+        transition-property: all;
+        transition-duration: .5s;
+        transition-timing-function: ease-in-out;
+        /* transition-delay: 2s; this will make after that time which we have mentioned.*/
+        
+    }
+    /* When ever move the cusor to the image  */
+    img:hover{
+        height:200px;
+    }
+
+    .container{
+        background-color: blue;
+        padding: 40px;
+        height: 90vh;
+    }
+    .box{
+        background-color: red;
+        padding:20px;
+        text-align: center;
+        height: 100px;
+        /* display: inline-block; */
+
+    }
+
+    /* Animation */
+    .box2{
+        background-color: aqua;
+        display: flex;
+        justify-content: space-around;
+    }
+    .text{
+        display: flex;
+        background-color: #909;
+        color: #fff;
+        margin-right: 40%;
+        border: 2px solid black;
+        border-radius: 5px;
+        width:200px;
+        align-items: center;
+        justify-content: center;
+        animation-name: textanimation;
+        animation-duration: 3s;
+        animation-delay: .5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count:infinite;
+        animation-direction: alternate-reverse;
+        /* animation: animation-name , duration , timing-function , delay , iteration , direction */
+    }
+    @keyframes textanimation {
+        /* We can also use pixel property as well as use percentage instead of (from and to).Ex 0% {item} 40% {item} 90%{item}*/
+        from{
+            width: 300px;
+            height: 50vh;
+        }
+        to{
+            width: 600px;
+            height: 100vh;
+        }
+        
+    }
+    .image{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="images/BasketBall.jpg" alt="BasketBall">
+            <img src="images/BasketBall.jpg" alt="BasketBall">
+            <img src="images/BasketBall.jpg" alt="BasketBall">
+            <img src="images/BasketBall.jpg" alt="BasketBall">
+            <img src="images/BasketBall.jpg" alt="BasketBall">
+            
+        </div>
+        <div class="box2">
+            <div class="text"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, soluta?</p></div>
+            <div class="image">
+                <img src="images/BasketBall.jpg" alt="BasketBall">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
