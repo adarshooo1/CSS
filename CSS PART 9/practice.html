@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+/* When we use Tranitions as well as responsive*/
+        .progressbar {
+            background-color: red;
+            height: 2px;
+            width: 0;
+            transition: width 1s ease-in-out;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+/* When we use animations */
+        /* .progressbar{
+            background-color: red;
+            height: 2px;
+            animation-name: loading;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        } */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header{
+            height: 80px;
+            background-color: #5f9ea0;
+            overflow: hidden;
+        }
+        main {
+            height: 700px;
+            background-color: #0f254d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* overflow-y: scroll; */
+        }
+        .imageHolder{
+            padding: 10px;
+            display: flex;
+            overflow-x: scroll;
+            }
+
+        .imageHolder img {
+            height: 200px;
+            display: block;
+            margin: 10px;
+            padding: 5px;
+}
+    
+        img{
+            height: 200px;
+            margin: auto;
+            justify-content:center;
+            flex-shrink: 0;
+            }
+/* When we hover the cursor then it make it zoomed-in by 30% becuase (1.3), if have -50% zoomed-out (0.5)*/
+        .img1:hover {
+            transform: scale(1.3);
+            transition: transform .3s ease-in-out;
+}
+        .img2:hover {
+            transform: scale(1.3);
+            transition: transform .3s ease-in-out;
+}
+        .img3:hover {
+            transform: scale(1.3);
+            transition: transform .3s ease-in-out;
+}
+
+/* When we hover the cursor then it make it rotate and keyframes to set animations */
+        /* Rotate Image on hover
+        .imageHolder:hover img {
+            animation: rotate 2s infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        } */
+
+        /* Animation properties */
+        @keyframes loading{
+            0%{
+                width: 0;
+            }
+            50%{
+                width: 60vw;
+            }
+            100%{
+                width: 100vw;
+            }
+        }
+        footer{
+            background-color: rgb(22, 10, 46);
+            height: 200px;
+            overflow: hidden;
+        }
+
+            /* Media Queries */
+            @media screen and (max-width: 768px) {
+            header {
+                height: 50px;
+            }
+            main {
+                height: 500px;
+            }
+            img {
+                height: 150px;
+            }
+            footer {
+                height: 150px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            header {
+                height: 30px;
+            }
+            main {
+                height: 300px;
+            }
+            img {
+                height: 100px;
+            }
+            footer {
+                height: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="progressbar"></div>
+    <header>
+
+    </header>
+    <main>
+
+            <div class="imageHolder">
+                <img class="img1" src="images/BasketBall.jpg" alt="bskt">
+                <img class="img2" src="images/BasketBall.jpg" alt="bskt">
+                <img class="img3" src="images/BasketBall.jpg" alt="bskt">
+            </div>
+
+    </main>
+    <footer>
+
+    </footer>
+
+<!-- Progress Bar when we use animations -->
+<script>
+    // Get a reference to the progress bar element
+    const progressBar = document.querySelector('.progressbar');
+
+    // Set a timeout to start the animation
+    setTimeout(() => {
+        // Set the width of the progress bar to 100%
+        progressBar.style.width = '100%';
+        }, 100);
+
+    // Add an event listener to the progress bar element to detect when the animation has ended
+    progressBar.addEventListener('transitionend', () => {
+        // Remove the progress bar element from the DOM
+        progressBar.remove();
+    });
+</script>
+
+
+
+<!-- Progress Bar when we use Transitions -->
+    <!-- <script>
+        // Get a reference to the progress bar element
+        const progressBar = document.querySelector('.progressbar');
+    
+        // Add an event listener to the progress bar element to detect when the animation has ended
+        progressBar.addEventListener('animationend', () => {
+            // Remove the progress bar element from the DOM
+            progressBar.remove();
+        });
+    </script> -->
+</body>
+</html>
